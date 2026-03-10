@@ -5,60 +5,53 @@ import java.util.Scanner;
 public class Guitar {
     private String brand;
     private String model;
-    private String bodyStyle;
-    private String bodyWoodType;
-    private String fretboardType;
+   // private String bodyStyle;
+    //   private String bodyWoodType;
+  //  private String fretboardType;
     private String color;
     private boolean isElectric;
-    private boolean isBoltOn;
+  //  private boolean isBoltOn;
     private double numberOfFrets;
-    private int numberOfStrings;
-    private String pickupType;
+  //  private int numberOfStrings;
+ //   private String pickupType;
     private double price;
-    private String stringGauge;
+ //   private String stringGauge;
     private boolean isPluggedIn;
     private int volumeKnobSetting;
     private String tuning;
 
 
 
-    public Guitar(String brand, String model, String bodyStyle, String bodyWoodType, String fretboardType,
-                  String color, boolean isElectric, boolean isBoltOn, double numberOfFrets, int numberOfStrings,
-                  String pickupType, double price, String stringGauge, boolean isPluggedIn, int volumeKnobSetting, String tuning) {
-       this.brand = brand;
-       this.model = model;
-       this.bodyStyle = bodyStyle;
-       this.bodyWoodType = bodyWoodType;
-       this.fretboardType = fretboardType;
-       this.color = color;
-       this.isElectric = isElectric;
-       this.isBoltOn = isBoltOn;
-       this.numberOfFrets = numberOfFrets;
-       this.numberOfStrings = numberOfStrings;
-       this.pickupType = pickupType;
-       this.price = price;
-       this.stringGauge = stringGauge;
-       this.isPluggedIn = isPluggedIn;
-       this.volumeKnobSetting = volumeKnobSetting;
-       this.tuning = tuning;
-    }
+//    public Guitar(String brand, String model, String bodyStyle, String bodyWoodType, String fretboardType,
+//                  String color, boolean isElectric, boolean isBoltOn, double numberOfFrets, int numberOfStrings,
+//                  String pickupType, double price, String stringGauge, boolean isPluggedIn, int volumeKnobSetting, String tuning) {
+//       this.brand = brand;
+//       this.model = model;
+//       this.bodyStyle = bodyStyle;
+//       this.bodyWoodType = bodyWoodType;
+//       this.fretboardType = fretboardType;
+//       this.color = color;
+//       this.isElectric = isElectric;
+//       this.isBoltOn = isBoltOn;
+//       this.numberOfFrets = numberOfFrets;
+//       this.numberOfStrings = numberOfStrings;
+//       this.pickupType = pickupType;
+//       this.price = price;
+//       this.stringGauge = stringGauge;
+//       this.isPluggedIn = isPluggedIn;
+//       this.volumeKnobSetting = volumeKnobSetting;
+//       this.tuning = tuning;
+//    }
 
     public Guitar(String brand, String model,
-                  String color, boolean isElectric, boolean isBoltOn, double numberOfFrets, int numberOfStrings,
-                  String pickupType, double price, boolean isPluggedIn, String tuning) {
+                  String color, boolean isElectric, double numberOfFrets,
+                  double price, boolean isPluggedIn, String tuning) {
         this.brand = brand;
         this.model = model;
-        this.bodyStyle = "Unknown" ;
-        this.bodyWoodType = "Unknown" ;
-        this.fretboardType = "Unknown" ;
         this.color = color;
         this.isElectric = isElectric;
-        this.isBoltOn = isBoltOn;
         this.numberOfFrets = numberOfFrets;
-        this.numberOfStrings = numberOfStrings;
-        this.pickupType = pickupType;
         this.price = price;
-        this.stringGauge = "Unknown";
         this.isPluggedIn = isPluggedIn;
         this.volumeKnobSetting = 0;
         this.tuning = tuning;
@@ -70,15 +63,15 @@ public class Guitar {
     String getModel() {
        return model;
     }
-    String getBodyStyle() {
-       return bodyStyle;
-    }
-    String getBodyWoodType() {
-       return bodyWoodType;
-    }
-    String getFretboardType() {
-       return fretboardType;
-    }
+//    String getBodyStyle() {
+//       return bodyStyle;
+//    }
+//    String getBodyWoodType() {
+//       return bodyWoodType;
+//    }
+//    String getFretboardType() {
+//       return fretboardType;
+//    }
     String getColor() {
        return color;
     }
@@ -86,24 +79,24 @@ public class Guitar {
        return isElectric;
     }
 
-    boolean isBoltOn() {
-       return isBoltOn;
-    }
+//    boolean isBoltOn() {
+//       return isBoltOn;
+//    }
     double getNumberOfFrets() {
        return numberOfFrets;
     }
-    int getNumberOfStrings() {
-       return numberOfStrings;
-    }
-    String getPickupType() {
-       return pickupType;
-    }
+//    int getNumberOfStrings() {
+//       return numberOfStrings;
+//    }
+//    String getPickupType() {
+//       return pickupType;
+//    }
     double getPrice() {
        return price;
     }
-    String getStringGauge() {
-       return stringGauge;
-    }
+//    String getStringGauge() {
+//       return stringGauge;
+//    }
     boolean isPluggedIn() {
        return isPluggedIn;
     }
@@ -119,15 +112,15 @@ public class Guitar {
     public void setModel(String model) {
        this.model = model;
     }
-    public void setBodyStyle(String bodyStyle) {
-       this.bodyStyle = bodyStyle;
-    }
-    public void setBodyWoodType(String bodyWoodType) {
-       this.bodyWoodType = bodyWoodType;
-    }
-    public void setFretboardType(String fretboardType) {
-       this.fretboardType = fretboardType;
-    }
+//    public void setBodyStyle(String bodyStyle) {
+//       this.bodyStyle = bodyStyle;
+//    }
+//    public void setBodyWoodType(String bodyWoodType) {
+//       this.bodyWoodType = bodyWoodType;
+//    }
+//    public void setFretboardType(String fretboardType) {
+//       this.fretboardType = fretboardType;
+//    }
 
     public void setColor(String color) {
        this.color = color;
@@ -135,24 +128,24 @@ public class Guitar {
     public void setElectric(boolean electric) {
        this.isElectric = electric;
     }
-    public void setBoltOn(boolean boltOn) {
-       this.isBoltOn = boltOn;
-    }
+//    public void setBoltOn(boolean boltOn) {
+//       this.isBoltOn = boltOn;
+//    }
     public void setNumberOfFrets(double numberOfFrets) {
        this.numberOfFrets = numberOfFrets;
     }
-    public void setNumberOfStrings(int numberOfStrings) {
-       this.numberOfStrings = numberOfStrings;
-    }
-    public void setPickupType(String pickupType) {
-       this.pickupType = pickupType;
-    }
+//    public void setNumberOfStrings(int numberOfStrings) {
+//       this.numberOfStrings = numberOfStrings;
+//    }
+//    public void setPickupType(String pickupType) {
+//       this.pickupType = pickupType;
+//    }
     public void setPrice(double price) {
        this.price = price;
     }
-    public void setStringGauge(String stringGauge) {
-       this.stringGauge = stringGauge;
-    }
+//    public void setStringGauge(String stringGauge) {
+//       this.stringGauge = stringGauge;
+//    }
     public void setPluggedIn(boolean pluggedIn) {
        this.isPluggedIn = pluggedIn;
     }
@@ -175,15 +168,15 @@ public class Guitar {
    }
 
 
-   public void changeStrings(){
-       System.out.println("Enter your string gauge");
-       Scanner sc = new Scanner(System.in);
-       String stringGauge = sc.nextLine();
-       setStringGauge(stringGauge);
-
-       System.out.println("You changed your strings");
-
-   }
+//   public void changeStrings(){
+//       System.out.println("Enter your string gauge");
+//       Scanner sc = new Scanner(System.in);
+//       String stringGauge = sc.nextLine();
+//       setStringGauge(stringGauge);
+//
+//       System.out.println("You changed your strings");
+//
+//   }
 
    public void setVolume() {
        System.out.println("Enter your new volume");
