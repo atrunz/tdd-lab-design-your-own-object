@@ -122,6 +122,7 @@ public class GuitarTest {
         Guitar guitar = new Guitar("Gibson", "Les Paul", "Jumbo",
                 true, 24, 24, true, "E Standard");
 
+        //allows us to check console output
         ByteArrayOutputStream output = new ByteArrayOutputStream();
         PrintStream originalOut = System.out;
         System.setOut(new PrintStream(output));
