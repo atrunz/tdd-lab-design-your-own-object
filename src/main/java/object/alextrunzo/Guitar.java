@@ -1,4 +1,4 @@
-package object;
+package object.alextrunzo;
 
 import java.util.Scanner;
 
